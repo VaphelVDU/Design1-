@@ -18,7 +18,7 @@ public class MobScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float mobX = GameObject.transform.position.x();
-        float mobZ = GameObject.transform.position.z();
+       // float mobX = GameObject.transform.position.x();
+       // float mobZ = GameObject.transform.position.z();
     }
 }
