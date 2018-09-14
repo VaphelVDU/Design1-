@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 public class Damage : MonoBehaviour
 {
     [SerializeField] Transform spawnPoint;
-    public int playerHealth;
-    public int damageAmount;
-    private Renderer rend;
+    public int playerHealth = 3;
+    public int damageAmount = 1;
+    public int seconds = 2;
+
+    void Start()
+    {
+
+    }
 
     void Update()
     {
@@ -25,7 +30,6 @@ public class Damage : MonoBehaviour
             respawning = true;
             print("now dead");
             StartCoroutine(Respawn());
-
         }
     }
     public IEnumerator Respawn()
