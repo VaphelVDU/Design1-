@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupSystem : MonoBehaviour {
-
-    private void OnTriggerEnter2D(Collider2D other)
+public class PickupSystem : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D pickUp)
     {
-        if (other.GetComponent<PlayerControler>() == null)
-        {
-            return;
-        }
+        Destroy(pickUp.gameObject);
     }
-}
+
+
 }
