@@ -43,30 +43,3 @@ public class CamShake : MonoBehaviour {
 }
 
 
-using UnityEngine.SceneManagement;
-
-public class Damage : MonoBehaviour
-{
-    public int health;
-    public int damageAmount;
-    private Renderer rend;
-
-    public void Reset()
-    {
-
-    }
-    public void TakingDamage(int damageAmount)
-    {
-        health = health - damageAmount;
-        print("Character damaged");
-
-        if (health < 0)
-        {
-            print("DEAD");
-            //Reset();
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
-    }
-
-}
-
