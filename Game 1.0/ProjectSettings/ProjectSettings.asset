@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
+<<<<<<< Updated upstream
   productGUID: fa2ffedc9fcdeac4c8ff4e59b0499150
+=======
+  productGUID: 431b26ebb84f66b4c8300c5fe81bf8e9
+>>>>>>> Stashed changes
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -52,7 +56,10 @@ PlayerSettings:
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
+<<<<<<< Updated upstream
   tizenShowActivityIndicatorOnLoading: -1
+=======
+>>>>>>> Stashed changes
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   iosAllowHTTPDownload: 1
@@ -111,6 +118,11 @@ PlayerSettings:
   videoMemoryForVertexBuffers: 0
   psp2PowerMode: 0
   psp2AcquireBGM: 1
+<<<<<<< Updated upstream
+=======
+  vulkanEnableSetSRGBWrite: 0
+  vulkanUseSWCommandBuffers: 0
+>>>>>>> Stashed changes
   m_SupportedAspectRatios:
     4:3: 1
     5:4: 1
@@ -142,10 +154,14 @@ PlayerSettings:
     oculus:
       sharedDepthBuffer: 0
       dashSupport: 0
+<<<<<<< Updated upstream
+=======
+    enable360StereoCapture: 0
+>>>>>>> Stashed changes
   protectGraphicsMemory: 0
   useHDRDisplay: 0
   m_ColorGamuts: 00000000
-  targetPixelDensity: 0
+  targetPixelDensity: 30
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
@@ -167,7 +183,11 @@ PlayerSettings:
   StripUnusedMeshComponents: 0
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
+<<<<<<< Updated upstream
   iOSTargetOSVersionString: 
+=======
+  iOSTargetOSVersionString: 8.0
+>>>>>>> Stashed changes
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 
@@ -241,6 +261,10 @@ PlayerSettings:
   androidSplashScreen: {fileID: 0}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
+<<<<<<< Updated upstream
+=======
+  AndroidBuildApkPerCpuArchitecture: 0
+>>>>>>> Stashed changes
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
@@ -266,6 +290,10 @@ PlayerSettings:
     iPhone: 1
     tvOS: 1
   m_BuildTargetGroupLightmapEncodingQuality: []
+<<<<<<< Updated upstream
+=======
+  m_BuildTargetGroupLightmapSettings: []
+>>>>>>> Stashed changes
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -388,6 +416,12 @@ PlayerSettings:
   switchAllowsRuntimeAddOnContentInstall: 0
   switchDataLossConfirmation: 0
   switchSupportedNpadStyles: 3
+<<<<<<< Updated upstream
+=======
+  switchNativeFsCacheSize: 32
+  switchIsHoldTypeHorizontal: 0
+  switchSupportedNpadCount: 8
+>>>>>>> Stashed changes
   switchSocketConfigEnabled: 0
   switchTcpInitialSendBufferSize: 32
   switchTcpInitialReceiveBufferSize: 64
@@ -520,7 +554,7 @@ PlayerSettings:
   webGLMemorySize: 256
   webGLExceptionSupport: 1
   webGLNameFilesAsHashes: 0
-  webGLDataCaching: 0
+  webGLDataCaching: 1
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
@@ -528,7 +562,11 @@ PlayerSettings:
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
+<<<<<<< Updated upstream
   webGLLinkerTarget: 0
+=======
+  webGLLinkerTarget: 1
+>>>>>>> Stashed changes
   scriptingDefineSymbols: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -550,7 +588,10 @@ PlayerSettings:
   metroApplicationDescription: Game 1.0
   wsaImages: {}
   metroTileShortName: 
+<<<<<<< Updated upstream
   metroCommandLineArgsFile: 
+=======
+>>>>>>> Stashed changes
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -566,6 +607,7 @@ PlayerSettings:
   metroFTAFileTypes: []
   metroProtocolName: 
   metroCompilationOverrides: 1
+<<<<<<< Updated upstream
   tizenProductDescription: 
   tizenProductURL: 
   tizenSigningProfileName: 
@@ -574,6 +616,8 @@ PlayerSettings:
   tizenDeploymentTarget: 
   tizenDeploymentTargetType: -1
   tizenMinOSVersion: 1
+=======
+>>>>>>> Stashed changes
   n3dsUseExtSaveData: 0
   n3dsCompressStaticMem: 1
   n3dsExtSaveDataNumber: 0x12345
@@ -594,6 +638,10 @@ PlayerSettings:
   XboxOneGameOsOverridePath: 
   XboxOnePackagingOverridePath: 
   XboxOneAppManifestOverridePath: 
+<<<<<<< Updated upstream
+=======
+  XboxOneVersion: 1.0.0.0
+>>>>>>> Stashed changes
   XboxOnePackageEncryption: 0
   XboxOnePackageUpdateGranularity: 2
   XboxOneDescription: 
@@ -613,7 +661,13 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
+<<<<<<< Updated upstream
   cloudServicesEnabled: {}
+=======
+  cloudServicesEnabled:
+    Collab: 1
+    UNet: 1
+>>>>>>> Stashed changes
   facebookSdkVersion: 
   apiCompatibilityLevel: 2
   cloudProjectId: 
