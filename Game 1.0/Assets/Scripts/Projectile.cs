@@ -1,30 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
 
 public class Projectile : MonoBehaviour
 {
-    public Rigidbody2D projectile;
-    public Transform Spawnpoint;
+    [Header("Gun")]
+    public float firerate = 0.1f;
+    public float cooldown = 0f;
+    public float spread = 5f;
+    public GameObject projectilePrefab;
 
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    public Transform point;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if (Time.timeScale != 0)
         {
-            Rigidbody2D clone;
+            if (Input.GetButton("Fire"))
+            {
+                if (CanFireGun())
+                {
+                    FireGun();
+                }
+            }
 
-            clone = (Rigidbody2D)Instantiate(projectile, Spawnpoint.position, projectile.rotation);
-
-            clone.velocity = Spawnpoint.TransformDirection(Vector2.forward * 20);
+            if (cooldown > 0)
+                cooldown -= Time.deltaTime;
         }
+    }
+
+    private void FireGun()
+    {
+        Instantiate(projectilePrefab, point.position, AngleWithSpread(spread));
+        cooldown = firerate;
+    }
+
+    private bool CanFireGun()
+    {
+        return cooldown < 0;
+    }
+
+    private Quaternion AngleWithSpread(float spread)
+    {
+        return (point.rotation * Quaternion.Euler(0, 0, Random.Range(-spread, spread)));
     }
 }
