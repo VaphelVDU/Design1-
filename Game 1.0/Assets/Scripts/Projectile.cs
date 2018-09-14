@@ -17,7 +17,7 @@ public class Projectile : MonoBehaviour
     {
         if (Time.timeScale != 0)
         {
-            if (Input.GetButton("Fire"))
+            if (Input.GetButton("Fire1"))
             {
                 if (CanFireGun())
                 {
