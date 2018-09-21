@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class PickupSystem : AudioScript
 {
-<<<<<<< HEAD
+    public AudioSource pickupSource;
+    public AudioClip pickupClip;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        PlayPickup();
-=======
-    private void OnCollisionEnter2D(Collision2D pickUp)
-    {
->>>>>>> master
+        PlaySound(pickupSource, pickupClip);
         Destroy(gameObject);
     }
+
 }

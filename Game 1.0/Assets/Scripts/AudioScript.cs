@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class AudioScript : MonoBehaviour
 {
-    public AudioSource pickupSource;
-    public AudioClip pickupSound;
+    public AudioSource sourcee;
 
-    public virtual void PlayPickup()
+    public void PlaySound(AudioSource source, AudioClip clip)
     {
-        pickupSource.PlayOneShot(pickupSound);
+        source.PlayOneShot(clip);
     }
 }
