@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PickupSystem : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D pickUp)
+    private void OnCollisionEnter2D(Collision2D pickUp)
     {
-        Destroy(pickUp.gameObject);
+        Destroy(gameObject);
     }
 
 
