@@ -2,14 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamShake : MonoBehaviour {
-
+public class CamShake : MonoBehaviour
+{ 
     public Transform camTransform;
-    public float shake = 0.5f;//For how long the objekt is shaking.
+    public float shake = 0.5f;//For how long the object is shaking.
     public float shakeAmount = 0.8f; //Value shakes the camera.
     public float decreaseFactor = 1.0f;
-    public int health;
-    public int damageAmount;
 
     Vector3 startPos;
 
@@ -41,5 +39,3 @@ public class CamShake : MonoBehaviour {
         }
     }
 }
-
-

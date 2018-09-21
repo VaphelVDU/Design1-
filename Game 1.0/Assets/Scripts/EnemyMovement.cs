@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EmemyMovement : MonoBehaviour
+public class EnemyMovement : MonoBehaviour
 {
 
     public Vector3 pos1;
