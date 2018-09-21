@@ -24,18 +24,9 @@ public class CamShake : MonoBehaviour
         startPos = camTransform.localPosition;
     }
 
-    private void Update()
+    public void ShakeFunction()
     {
-        if (shake > 0)
-        {
-            camTransform.localPosition = startPos + Random.insideUnitSphere * shakeAmount;
-            shake -= Time.deltaTime * decreaseFactor;
-        }
-
-        else
-        {
-            shake = 0f;
-            startPos = camTransform.localPosition;
-        }
+        camTransform.localPosition = startPos + Random.insideUnitSphere * shakeAmount;
+        shake -= Time.deltaTime * decreaseFactor;
     }
 }
