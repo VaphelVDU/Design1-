@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.timeScale != 0)
+
         {
             if (Input.GetButton("Fire1"))
             {
@@ -28,8 +28,8 @@ public class Projectile : MonoBehaviour
             if (cooldown > 0)
                 cooldown -= Time.deltaTime;
         }
-    }
 
+    }
     private void FireGun()
     {
         Instantiate(projectilePrefab, point.position, AngleWithSpread(spread));
@@ -38,7 +38,7 @@ public class Projectile : MonoBehaviour
 
     private bool CanFireGun()
     {
-        return cooldown < 0;
+        return cooldown < 1;
     }
 
     private Quaternion AngleWithSpread(float spread)
