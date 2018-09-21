@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioScript : MonoBehaviour {
+public class AudioScript : MonoBehaviour
+{
+    public AudioSource pickupSource;
+    public AudioClip pickupSound;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public virtual void PlayPickup()
+    {
+        pickupSource.PlayOneShot(pickupSound);
+    }
 }

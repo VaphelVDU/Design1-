@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupSystem : MonoBehaviour
+public class PickupSystem : AudioScript
 {
-    private void OnTriggerEnter2D(Collider2D pickUp)
+
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        Destroy(pickUp.gameObject);
+        PlayPickup();
+        Destroy(gameObject);
     }
-
-
 }
