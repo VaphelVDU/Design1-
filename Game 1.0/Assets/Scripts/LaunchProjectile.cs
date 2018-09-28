@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaunchProjectile : MonoBehaviour
+public class LaunchProjectile : CamShake
 {
     public GameObject bullet;
     private GameObject b;
@@ -11,6 +11,10 @@ public class LaunchProjectile : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire1"))
         {
+<<<<<<< HEAD
+=======
+            ShakeFunction();
+>>>>>>> master
             b = (GameObject)(Instantiate(bullet, transform.position + transform.right * 1.5f, Quaternion.identity));
             b.GetComponent<Rigidbody2D>().AddForce(transform.right * 700);
         }
